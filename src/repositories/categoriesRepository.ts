@@ -6,7 +6,7 @@ interface ICreateCategoryDTO {
 }
 
 class CategoriesRepository {
-  private categories: Category[] = [];
+  private categories: Category[];
   constructor() {
     this.categories = [];
   }
@@ -18,6 +18,15 @@ class CategoriesRepository {
       created_At: new Date()
     });
     this.categories.push(category);
+  }
+
+  list(): Category[] {
+    return this.categories;
+  }
+
+  findByName(name: string): Category {
+    const category = this.categories.find(category => category.name === name);
+    return category;
   }
 }
 
