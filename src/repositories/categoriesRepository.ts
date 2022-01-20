@@ -15,7 +15,7 @@ class CategoriesRepository {
     Object.assign(category, {
       name,
       description,
-      created_At: new Date()
+      created_At: new Date(),
     });
     this.categories.push(category);
   }
@@ -30,4 +30,4 @@ class CategoriesRepository {
   }
 }
 
-export { CategoriesRepository }; 
+export { CategoriesRepository };
