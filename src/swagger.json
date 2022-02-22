@@ -37,7 +37,7 @@
         }, 
         "responses": { 
           "201": { 
-            "description": "Create"
+            "description": "The category was created."
           },
           "500": { 
             "description": "Category already exists"
