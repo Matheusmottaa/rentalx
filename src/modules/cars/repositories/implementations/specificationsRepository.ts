@@ -20,7 +20,7 @@ class SpecificationsRepository implements ISpecificationRepostiroy {
     await this.repository.save(specification);
   }
   async findByName(name: string): Promise<Specification> {
-    const specification = this.repository.findOne(name);
+    const specification = this.repository.findOne({ name });
     return specification;
   }
 }
