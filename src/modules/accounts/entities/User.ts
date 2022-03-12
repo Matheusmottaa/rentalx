@@ -13,7 +13,7 @@ class User {
   username: string;
 
   @Column()
-  passowrd: string;
+  password: string;
 
   @Column()
   email: string;
@@ -33,9 +33,6 @@ class User {
   constructor() {
     if (!this.id) {
       this.id = uuidV4();
-    }
-    if (!this.isAdmin) {
-      this.isAdmin = false;
     }
   }
 }
