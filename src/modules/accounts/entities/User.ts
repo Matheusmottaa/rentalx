@@ -10,9 +10,6 @@ class User {
   name: string;
 
   @Column()
-  username: string;
-
-  @Column()
   password: string;
 
   @Column()
@@ -23,9 +20,6 @@ class User {
 
   @Column()
   isAdmin: boolean;
-
-  @Column()
-  avatar: string;
 
   @CreateDateColumn()
   created_at: Date;
