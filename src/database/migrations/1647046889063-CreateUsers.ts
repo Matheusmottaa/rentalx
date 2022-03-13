@@ -28,17 +28,13 @@ export class CreateUsers1647046889063 implements MigrationInterface {
             type: "varchar",
           },
           {
-            name: "driver_lincense",
+            name: "driver_license",
             type: "varchar",
           },
           {
             name: "isAdmin",
             type: "boolean",
             default: false,
-          },
-          {
-            name: "avatar",
-            type: "varchar",
           },
           {
             name: "created_at",
