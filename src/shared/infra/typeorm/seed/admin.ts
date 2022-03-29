@@ -9,7 +9,7 @@ async function create() {
   const id = uuidv4();
   connection.query(
     `INSERT INTO users(id, name, email, password, "isAdmin", created_at, driver_license)
-    values('${id}', 'admin', 'admin@retalx.com.br', '${password}', true, 'now()', 'XXXXX')
+    values('${id}', 'admin', 'admin@rentalx.com.br', '${password}', true, 'now()', 'XXXXX')
     `,
   );
 }
