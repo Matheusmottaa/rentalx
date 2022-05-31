@@ -2,7 +2,7 @@
 
 ## How To Install 
 
-Clone repository using
+Clone repository using:
 
 `$ git clone https://github.com/Matheusmottaa/rentalx`
 
@@ -13,7 +13,11 @@ access the directory, using:
 
 install the dependencies: 
 
-`$ yarn or npm install`
+`$ yarn `
+
+or 
+
+`npm install`
 
 run docker using: 
 
